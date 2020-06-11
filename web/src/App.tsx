@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
 
+// JSX: sintaxe de XML dentro do JAVASCRIPT
+// importing routes (page)
+import Routes from './routes';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello World</h1>
-      </header>
-    </div>
+    <Routes />    
   );
 }
 
