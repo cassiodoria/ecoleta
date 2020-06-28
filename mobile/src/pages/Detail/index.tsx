@@ -12,9 +12,10 @@ interface Params {
 }
 
 interface Data {
-  point: {
+  serializedPoint: {
     name: string,
     image: string,
+    image_url: string,
     whatsapp: string,
     email: string,
     city: string,
@@ -32,7 +33,7 @@ const Detail = () => {
     const routeParams = route.params as Params;
 
     useEffect(() => {
-      api.get(`points/${routeParams.point_id}`)
+      api.get<Data>(`points/${routeParams.point_id}`)
         .then(response => {
           setData(response.data);
         })
@@ -42,7 +43,7 @@ const Detail = () => {
         navigation.goBack();
     };
 
-    if(!data.point){
+    if(!data.serializedPoint){
       // TODO tela de loading 
       return null;
     }
@@ -50,12 +51,12 @@ const Detail = () => {
     function handleComposeMail() {
       MailComposer.composeAsync({
         subject: 'Interesse na coleta de resíduos',
-        recipients: [data.point.email],
+        recipients: [data.serializedPoint.email],
       })
     }
 
     function handleWhatsapp(){
-      Linking.openURL(`whatsapp://send?phone=${data.point.whatsapp}&text=Tenho interesse sobre coleta de resíduos`);
+      Linking.openURL(`whatsapp://send?phone=${data.serializedPoint.whatsapp}&text=Tenho interesse sobre coleta de resíduos`);
     }
 
     return (
@@ -67,9 +68,9 @@ const Detail = () => {
 
                 <Image 
                     style={styles.pointImage}
-                    source={{ uri: data.point.image}}
+                    source={{ uri: data.serializedPoint.image_url}}
                 />
-                <Text style={styles.pointName}>{data.point.name}</Text>
+                <Text style={styles.pointName}>{data.serializedPoint.name}</Text>
                 
                 <Text style={styles.pointItems}>
                   {data.items.map(item => item.title ).join(', ')}
@@ -77,7 +78,7 @@ const Detail = () => {
                 
                 <View style={styles.address}>
                     <Text style={styles.addressTitle}>Endereço</Text>
-                    <Text style={styles.addressContent}>{data.point.city}, {data.point.uf}</Text>
+                    <Text style={styles.addressContent}>{data.serializedPoint.city}, {data.serializedPoint.uf}</Text>
 
                 </View>
 
