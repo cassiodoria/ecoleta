@@ -156,7 +156,7 @@ Depois que o merge da sua pull request for feito, você pode deletar a sua branc
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/cassiodoria/ecoleta/blob/master/LICENSE) para mais detalhes.
 
-Feito com ♥ by [Cássio Dória](https://www.linkedin.com/in/cassiodoria/)
+Feito com ♥ by [Cássio Dória](https://www.linkedin.com/in/cassio-doria/)
 
 [nodejs]: https://nodejs.org/
 [typescript]: https://www.typescriptlang.org/
