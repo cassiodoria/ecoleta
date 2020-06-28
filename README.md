@@ -30,14 +30,14 @@
 </p>
 
 <p align="center">
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-usar">Como Usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licenca">Licença</a>
+  <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#como-usar">Como Usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licenca">Licença</a>
 </p>
 
-# 💻 Projeto
+# 💻Projeto
 
 O projeto **Ecoleta** foi desenvolvido na NextLevelWeek 1.0 🚀 oferecido pela [Rocketseat]. É um projeto completo com backend (API), Aplicação Web e Aplicação Mobile.<br />
 
@@ -47,7 +47,7 @@ O projeto **Ecoleta** foi desenvolvido na NextLevelWeek 1.0 🚀 oferecido pela 
 Já o servidor backend gerencia os dados cadastros e disponíbiliza o acesso aos dados via **API REST**<br />
 No **Aplicativo Mobile** é possível consultar os locais cadastrados na aplicação web pelo mapa filtrando pelos tipos de materiais que o local coleta.
 
-# 🛠 Tecnologias
+# 🛠Tecnologias
 
 ### Server (API)
 * [Node.JS](https://nodejs.org/en/docs/)
@@ -73,7 +73,7 @@ No **Aplicativo Mobile** é possível consultar os locais cadastrados na aplica�
 * [Mail Composer](https://docs.expo.io/versions/latest/sdk/mail-composer/)
 * [Map View](https://docs.expo.io/versions/latest/sdk/map-view/)
 
-#  🚀 Como Usar
+#  🚀Como Usar
 
 Para usar a aplicação, você precisa de [Git](https://git-scm.com) e [Node.js][nodejs] instalado no seu computador. Com as ferramentas instaladas, basta seguir os passos a seguir:
 
@@ -143,7 +143,7 @@ Exemplo usando a ferramenta [Expo]
 <img alt="Teste da aplicação mobile usando Expo" src=".github/aplicacao-mobile.png" />
 
 
-# 🤔 Como contribuir
+# 🤔Como contribuir
 
 - Faça um fork desse repositório;
 - Cria uma branch com a sua feature: `git checkout -b minha-feature`;
@@ -152,7 +152,7 @@ Exemplo usando a ferramenta [Expo]
 
 Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
 
-# 📝 Licença
+# 📝Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/cassiodoria/ecoleta/blob/master/LICENSE) para mais detalhes.
 
