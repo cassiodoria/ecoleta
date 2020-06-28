@@ -132,7 +132,7 @@ $ cd ecoleta/mobile
 # Instale as dependências
 $ npm install
 
-# Execute a aplicação mobile. A ferramenta irá abrir. Basta escaniar o qrcode no próprio terminal ou na página do Expo que irá abrir no browser. 
+# Execute a aplicação mobile. A ferramenta Expo irá abrir. Basta escanear o qrcode no próprio terminal ou na página do Expo que irá abrir no browser. 
 $ npm start
 
 # Se ocorrer algum problema relacionado a fonte, execute o comando a seguir:
